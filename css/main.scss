@@ -1,0 +1,117 @@
+$primary-color: #2f80ed;
+$secondary-color: #333333;
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+* {
+    color: $secondary-color;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    color: $primary-color;
+    margin-bottom: 0.2em;
+    margin-right: 0em;
+    margin-top: 0em;
+    width: 300px;
+}
+
+h2 {
+    color: $secondary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    width: 300px;
+}
+
+h3 {
+   color: $primary-color;
+}
+
+a {
+    color: $primary-color;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+img {
+    display:block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.image {
+    display: inline-flex;
+    float: left;
+    margin-left: 300px;
+}
+
+.box {
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   width: 300px;
+}
+
+
+.contacts {
+    margin-bottom: 1em;
+    margin-right: 0;
+    &__type {
+        min-width: 90px;
+    }
+}
+
+p {
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 2em;
+    margin-left: 20px;
+
+    &__date {
+        min-width: 185px;
+        margin-bottom: 1em;
+    }
+    &__name {
+        font-weight: bold;
+    }
+}
+
+.skill {
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .experience {
+        display: block;
+    }
+}
